@@ -107,7 +107,7 @@ ptdl_dl() {
   mkdir -p /var/www/pterodactyl
   cd /var/www/pterodactyl || exit
 
-  curl -Lo panel.tar.gz "$PANEL_DL_URL"
+  curl -Lo panel.tar.gz https://github.com/pterodactyl/panel/releases/download/v1.11.5/panel.tar.gz
   tar -xzvf panel.tar.gz
   chmod -R 755 storage/* bootstrap/cache/
 
